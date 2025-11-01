@@ -1,0 +1,8 @@
+{
+  "name": "n8n-dev",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "n8n",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "sleep 2",
+  "shutdownAction": "stopCompose"
+}
