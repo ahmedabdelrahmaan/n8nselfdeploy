@@ -1,8 +1,10 @@
 {
-  "name": "n8n-dev",
-  "dockerComposeFile": ["../docker-compose.yml"],
-  "service": "n8n",
-  "workspaceFolder": "/workspace",
-  "postCreateCommand": "sleep 2",
-  "shutdownAction": "stopCompose"
+  "name": "n8n-codespace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "bash setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-azuretools.vscode-docker"]
+    }
+  }
 }
